@@ -7,6 +7,7 @@ public class CuentaBanco {
     private String cuenta;
     private double saldo;
     private double tipoInterés;
+    private int nCuenta;
 
     public CuentaBanco()
     {
