@@ -24,7 +24,14 @@ public class CuentaBanco {
     {
         return saldo;
     }
-
+    public int registroCuentas(int cuentas){
+    	cuentas=10;
+    	for(int i=0;i<cuentas;i++){
+    		nCuenta=i++;
+    	}
+		return nCuenta;
+    	
+    }
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
