@@ -27,9 +27,9 @@ public class CuentaBanco {
     public int registroCuentas(int cuentas){
     	cuentas=10;
     	for(int i=0;i<cuentas;i++){
-    		nCuenta=i++;
+    		setnCuenta(i++);
     	}
-		return nCuenta;
+		return getnCuenta();
     	
     }
     public void ingresar(double cantidad) throws Exception
@@ -47,4 +47,12 @@ public class CuentaBanco {
             throw new Exception ("No se hay suficiente saldo");
         saldo = saldo - cantidad;
     }
+
+	private int getnCuenta() {
+		return nCuenta;
+	}
+
+	private void setnCuenta(int nCuenta) {
+		this.nCuenta = nCuenta;
+	}
 }
